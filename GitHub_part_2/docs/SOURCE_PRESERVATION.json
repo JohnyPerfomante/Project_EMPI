@@ -1,0 +1,633 @@
+{
+  "source_files": 103,
+  "unchanged_files": 97,
+  "adapted_files": [
+    ".dockerignore",
+    ".env.example",
+    ".gitignore",
+    "README.md",
+    "docker-compose.yml",
+    "frontend/playwright.config.ts"
+  ],
+  "excluded_temporary_files": "Word owner lock files (~$*) are not project sources.",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "original_sha256": "d9fad93c93d79ec4a7041d1864b4344c51233b0810fc08c5a522992386cb8a32",
+      "github_sha256": "4fee25109fc6b51959449c0d467548248ca8d9c4c90cd9aa7acf70f84595c59f",
+      "unchanged": false
+    },
+    {
+      "path": ".env.example",
+      "original_sha256": "0441018687d77f2de58c90ebb0d7f79bb760dceec8a1cd231bba0e863c6a0d01",
+      "github_sha256": "c70b27ed68884ff7b3ca23ec6cbfabfe27e604ce790d931f7039910eba3ae668",
+      "unchanged": false
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "original_sha256": "e42e2b04eb98324c6ef78d3e104a9d9e07215c5847806b78db5a6321c22ff6e2",
+      "github_sha256": "e42e2b04eb98324c6ef78d3e104a9d9e07215c5847806b78db5a6321c22ff6e2",
+      "unchanged": true
+    },
+    {
+      "path": ".gitignore",
+      "original_sha256": "7732c84f52f8f9940149bfffa8806b51d23b7ef47c5b6f6b8e6fd38248033e45",
+      "github_sha256": "82a0c2256469e28ac0e6acc26e66edc97e87e2d1ae7fd0487315fe1afc5585c2",
+      "unchanged": false
+    },
+    {
+      "path": "Makefile",
+      "original_sha256": "37c9d5765cc579cfb4b7caaa5f91ff8088bb68b1268e726724eaf9edeff59234",
+      "github_sha256": "37c9d5765cc579cfb4b7caaa5f91ff8088bb68b1268e726724eaf9edeff59234",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "original_sha256": "caf02b4f923d796d4d34ec2b591cb2a80080c0a77c4393f916ca4eb14b76e3a7",
+      "github_sha256": "7e77bbebef5d68580b356cb20d8f9fba4e4fb07698ad1be16180fa484e20832a",
+      "unchanged": false
+    },
+    {
+      "path": "backend/Dockerfile",
+      "original_sha256": "15608be7eb1d3cadf7a10fdab1b8b488011adc3254731060269591d731e6d6cb",
+      "github_sha256": "15608be7eb1d3cadf7a10fdab1b8b488011adc3254731060269591d731e6d6cb",
+      "unchanged": true
+    },
+    {
+      "path": "backend/alembic.ini",
+      "original_sha256": "4be35c86b24192bde1327811488c4fcbc1f446b8c1e688fbbcba8f27640a252b",
+      "github_sha256": "4be35c86b24192bde1327811488c4fcbc1f446b8c1e688fbbcba8f27640a252b",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "github_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "github_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/administration.py",
+      "original_sha256": "afc290f2d065eb42b1649645537f780508921b324c747ae44dd92d1901fb67b8",
+      "github_sha256": "afc290f2d065eb42b1649645537f780508921b324c747ae44dd92d1901fb67b8",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/auth.py",
+      "original_sha256": "90d0089f0197a5fd69d6cb23994c43da52fb8f7001a8144ef38d04f50d7ea700",
+      "github_sha256": "90d0089f0197a5fd69d6cb23994c43da52fb8f7001a8144ef38d04f50d7ea700",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/common.py",
+      "original_sha256": "a3783103aad073d24b14ca2d8de8ea0aa255ed55d8e0bd350ff082f88a7f1cd8",
+      "github_sha256": "a3783103aad073d24b14ca2d8de8ea0aa255ed55d8e0bd350ff082f88a7f1cd8",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/courses.py",
+      "original_sha256": "bebfd7ce7268b326b53e53fe5e1644fc7e1e24daf81f67dcea670345f190a8f9",
+      "github_sha256": "bebfd7ce7268b326b53e53fe5e1644fc7e1e24daf81f67dcea670345f190a8f9",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/questions.py",
+      "original_sha256": "cc6bd5d526262ff560adf1a5f72a1c604cfcf08dfe9f81488e3e1958973c049e",
+      "github_sha256": "cc6bd5d526262ff560adf1a5f72a1c604cfcf08dfe9f81488e3e1958973c049e",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/reports.py",
+      "original_sha256": "0f848a3f5054cf6ef7fabbd2e8a4acf37fe9fb71682dfb825260e53bf6c3b05b",
+      "github_sha256": "0f848a3f5054cf6ef7fabbd2e8a4acf37fe9fb71682dfb825260e53bf6c3b05b",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/submissions.py",
+      "original_sha256": "de652eea7387fe8936f24c240951555d431d904e5822b28d698022d876b2cdc6",
+      "github_sha256": "de652eea7387fe8936f24c240951555d431d904e5822b28d698022d876b2cdc6",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/api/variations.py",
+      "original_sha256": "7f7fa0b1b4e0853d4c3b2eff18c95459c0cff30f88576aa022ce9c0ba3283151",
+      "github_sha256": "7f7fa0b1b4e0853d4c3b2eff18c95459c0cff30f88576aa022ce9c0ba3283151",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/core/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "github_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/core/config.py",
+      "original_sha256": "474939356706a0e16d2a4030f9e9a9b36e31a2a444c36ae298bfb86a7996c80e",
+      "github_sha256": "474939356706a0e16d2a4030f9e9a9b36e31a2a444c36ae298bfb86a7996c80e",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/core/errors.py",
+      "original_sha256": "0a6b6daab3721dfb97b8a043f6f892c6b7c8a07b2c95d46b62e27e8bbfd6d1cd",
+      "github_sha256": "0a6b6daab3721dfb97b8a043f6f892c6b7c8a07b2c95d46b62e27e8bbfd6d1cd",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/core/logging.py",
+      "original_sha256": "0236df4bd1e6398b5d7cd33edf323aea01df7fc64235138cb2868def194fd3e9",
+      "github_sha256": "0236df4bd1e6398b5d7cd33edf323aea01df7fc64235138cb2868def194fd3e9",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/database/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "github_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/database/session.py",
+      "original_sha256": "4a58f6fa5b5dd567fe8a054e7439eae24ff13415f9d9ffa9b9a1d7b99f011f44",
+      "github_sha256": "4a58f6fa5b5dd567fe8a054e7439eae24ff13415f9d9ffa9b9a1d7b99f011f44",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/main.py",
+      "original_sha256": "47ed8a8c8d8487a67e85e363d2d2f8b7552920415b015bfaaa3d4dbaab7185e7",
+      "github_sha256": "47ed8a8c8d8487a67e85e363d2d2f8b7552920415b015bfaaa3d4dbaab7185e7",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/models/__init__.py",
+      "original_sha256": "b21baf31a3f017eaf1e2f91104b2c6152a4b5b0b3882f420c576f023d7bb096f",
+      "github_sha256": "b21baf31a3f017eaf1e2f91104b2c6152a4b5b0b3882f420c576f023d7bb096f",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/nlp/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "github_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/nlp/analyzer.py",
+      "original_sha256": "e763f39217b4659e7e93a9792387f2710a6f24680aafb34773361234094e10be",
+      "github_sha256": "e763f39217b4659e7e93a9792387f2710a6f24680aafb34773361234094e10be",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/nlp/provider.py",
+      "original_sha256": "ad20d79d2a578227ef7338a984e217b67fdc4986b2958b62cdcd55a7df22eb7f",
+      "github_sha256": "ad20d79d2a578227ef7338a984e217b67fdc4986b2958b62cdcd55a7df22eb7f",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/nlp/text.py",
+      "original_sha256": "dc7da11fd58fe2725287a7c358dff76eebd2e54303970f82f429e5d7c04050eb",
+      "github_sha256": "dc7da11fd58fe2725287a7c358dff76eebd2e54303970f82f429e5d7c04050eb",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/schemas/analysis.py",
+      "original_sha256": "b0c70776b5e3538df850e04e660054d10290c14dce9575ce683826d6e588eb2d",
+      "github_sha256": "b0c70776b5e3538df850e04e660054d10290c14dce9575ce683826d6e588eb2d",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/schemas/catalog.py",
+      "original_sha256": "1b6d4c17c6837485e4f006747d882aa660905fa9f2f97b00c1597c5c759373f4",
+      "github_sha256": "1b6d4c17c6837485e4f006747d882aa660905fa9f2f97b00c1597c5c759373f4",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/schemas/common.py",
+      "original_sha256": "42d0ff880dfdcb94771f9385f955bf0adbba9c59f82b2ebb98a1663254b7781f",
+      "github_sha256": "42d0ff880dfdcb94771f9385f955bf0adbba9c59f82b2ebb98a1663254b7781f",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/security/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "github_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/security/auth.py",
+      "original_sha256": "b582ffc77a63dde2143d7169089ba9ca82df9677c6bd1c3ed95d7435c104badd",
+      "github_sha256": "b582ffc77a63dde2143d7169089ba9ca82df9677c6bd1c3ed95d7435c104badd",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/services/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "github_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/services/access.py",
+      "original_sha256": "3ada7c0419d41cdbd5babf913423606753a4c23f717edf7cb3e5a342d438ab07",
+      "github_sha256": "3ada7c0419d41cdbd5babf913423606753a4c23f717edf7cb3e5a342d438ab07",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/services/analysis_worker.py",
+      "original_sha256": "829a7d9b38e3cd721f30ada59695944482805e82e1dd298a4e14fce0bfa6894a",
+      "github_sha256": "829a7d9b38e3cd721f30ada59695944482805e82e1dd298a4e14fce0bfa6894a",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/services/audit.py",
+      "original_sha256": "745afcb2fd3f3eed6923c02c652a438f33ba9958826aa3a2eba7e2688d5d9185",
+      "github_sha256": "745afcb2fd3f3eed6923c02c652a438f33ba9958826aa3a2eba7e2688d5d9185",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/services/configuration.py",
+      "original_sha256": "65c75de3465c08ea17e260626075aa9f09b4f27449980046cb5036e68427c182",
+      "github_sha256": "65c75de3465c08ea17e260626075aa9f09b4f27449980046cb5036e68427c182",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/services/materials.py",
+      "original_sha256": "035937d606cabe300fe449d97cb76a4810dcbd25fac139ae16de56f10b312d6e",
+      "github_sha256": "035937d606cabe300fe449d97cb76a4810dcbd25fac139ae16de56f10b312d6e",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/services/registration.py",
+      "original_sha256": "e07062805baf6c842cbdde453eef4cc4799f46ae491116a266048ed7c921ded8",
+      "github_sha256": "e07062805baf6c842cbdde453eef4cc4799f46ae491116a266048ed7c921ded8",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/services/submissions.py",
+      "original_sha256": "792b4832668b1ec6aeca1ef45e4746e90e1b8c4d9de989ea4076ac9a767488b7",
+      "github_sha256": "792b4832668b1ec6aeca1ef45e4746e90e1b8c4d9de989ea4076ac9a767488b7",
+      "unchanged": true
+    },
+    {
+      "path": "backend/app/worker.py",
+      "original_sha256": "6dc651fb3c7451854dcc15696cbbf034c95daf7bb77b2f3ec6fe8db41d97310e",
+      "github_sha256": "6dc651fb3c7451854dcc15696cbbf034c95daf7bb77b2f3ec6fe8db41d97310e",
+      "unchanged": true
+    },
+    {
+      "path": "backend/migrations/env.py",
+      "original_sha256": "cf43a9ebcb336eba4a2844e35de3feb55b6c390ff1001d06b0e8f407b6e6c274",
+      "github_sha256": "cf43a9ebcb336eba4a2844e35de3feb55b6c390ff1001d06b0e8f407b6e6c274",
+      "unchanged": true
+    },
+    {
+      "path": "backend/migrations/script.py.mako",
+      "original_sha256": "d7558dcb7ce01d3e44830898336d3027de66e5ffdb1491c0cd27f6159b021902",
+      "github_sha256": "d7558dcb7ce01d3e44830898336d3027de66e5ffdb1491c0cd27f6159b021902",
+      "unchanged": true
+    },
+    {
+      "path": "backend/migrations/versions/0001_vector.py",
+      "original_sha256": "b606544e7101cf87c6235b116d7d2bdc32d4b06eeb19e63248ae10f82e49e19d",
+      "github_sha256": "b606544e7101cf87c6235b116d7d2bdc32d4b06eeb19e63248ae10f82e49e19d",
+      "unchanged": true
+    },
+    {
+      "path": "backend/migrations/versions/0002_schema_create_learning_and_analysis_schema.py",
+      "original_sha256": "3e8dc2f842dc8b591ee2bb6e298e87f2597ee0e28a4dd05d33f2760cb022b1f9",
+      "github_sha256": "3e8dc2f842dc8b591ee2bb6e298e87f2597ee0e28a4dd05d33f2760cb022b1f9",
+      "unchanged": true
+    },
+    {
+      "path": "backend/migrations/versions/0003_indexes.py",
+      "original_sha256": "7b2b0b2c641bc14416c0e9f0525c88d6718b75015f908652458034da6332269c",
+      "github_sha256": "7b2b0b2c641bc14416c0e9f0525c88d6718b75015f908652458034da6332269c",
+      "unchanged": true
+    },
+    {
+      "path": "backend/migrations/versions/0004_embedding_jobs.py",
+      "original_sha256": "12555a3eeb845e9785dfc8d5c460df9417cdbae8e58ee4d882acb8c35cc23f57",
+      "github_sha256": "12555a3eeb845e9785dfc8d5c460df9417cdbae8e58ee4d882acb8c35cc23f57",
+      "unchanged": true
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "original_sha256": "cb82042b8823a61b755f6734ac6a99b0ec9b9c25afad2b7ba9d374694442e1f7",
+      "github_sha256": "cb82042b8823a61b755f6734ac6a99b0ec9b9c25afad2b7ba9d374694442e1f7",
+      "unchanged": true
+    },
+    {
+      "path": "backend/scripts/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "github_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "backend/scripts/bootstrap_admin.py",
+      "original_sha256": "4b910bb74ea532b82967fa62aca3a731ce10bbb63a33e7c0ab3ae93be9a2f124",
+      "github_sha256": "4b910bb74ea532b82967fa62aca3a731ce10bbb63a33e7c0ab3ae93be9a2f124",
+      "unchanged": true
+    },
+    {
+      "path": "backend/scripts/evaluate.py",
+      "original_sha256": "b6878be21cb35400bf336618b0316523eb1e65b554afbf9d923d6350c01a1f32",
+      "github_sha256": "b6878be21cb35400bf336618b0316523eb1e65b554afbf9d923d6350c01a1f32",
+      "unchanged": true
+    },
+    {
+      "path": "backend/scripts/prepare_models.py",
+      "original_sha256": "7237a1400464192679675b4e3aaf9a92be1ad7eebcaaf52de13dd63ed59570d5",
+      "github_sha256": "7237a1400464192679675b4e3aaf9a92be1ad7eebcaaf52de13dd63ed59570d5",
+      "unchanged": true
+    },
+    {
+      "path": "backend/scripts/seed_demo.py",
+      "original_sha256": "2d9255df06887d12e75887bb07272a3033256522c875245791f04631ad512621",
+      "github_sha256": "2d9255df06887d12e75887bb07272a3033256522c875245791f04631ad512621",
+      "unchanged": true
+    },
+    {
+      "path": "backend/tests/conftest.py",
+      "original_sha256": "98bc54f79ee17eb1b8e8371bcdbf7ea2e7e3aabd25f643627c823c903f6eb33d",
+      "github_sha256": "98bc54f79ee17eb1b8e8371bcdbf7ea2e7e3aabd25f643627c823c903f6eb33d",
+      "unchanged": true
+    },
+    {
+      "path": "backend/tests/test_nlp.py",
+      "original_sha256": "08a3da14e54bfa24680fc72ddaaffdacbba6f9b4115beeade60e13c06738c82f",
+      "github_sha256": "08a3da14e54bfa24680fc72ddaaffdacbba6f9b4115beeade60e13c06738c82f",
+      "unchanged": true
+    },
+    {
+      "path": "backend/tests/test_registration.py",
+      "original_sha256": "e2c7737b9eb701474ed48cc77dc8a97f46845a6eeefbcb4b6f29fc064b212d53",
+      "github_sha256": "e2c7737b9eb701474ed48cc77dc8a97f46845a6eeefbcb4b6f29fc064b212d53",
+      "unchanged": true
+    },
+    {
+      "path": "backend/tests/test_workflow.py",
+      "original_sha256": "6db490820a083a2ae9893de4d2636acac147a39a27f605b36d05607038e60d79",
+      "github_sha256": "6db490820a083a2ae9893de4d2636acac147a39a27f605b36d05607038e60d79",
+      "unchanged": true
+    },
+    {
+      "path": "database/seeds/questions.tsv",
+      "original_sha256": "a5a6414c76f8d291f4258c2222ee46ab5091869021eed359f3b92e7467870ff2",
+      "github_sha256": "a5a6414c76f8d291f4258c2222ee46ab5091869021eed359f3b92e7467870ff2",
+      "unchanged": true
+    },
+    {
+      "path": "docker-compose.yml",
+      "original_sha256": "94f526f229ec3efb3c0261e0b16b243d25717f60cc4a1333365ea4ad20017d38",
+      "github_sha256": "74b8b7796f5ccc5c88d0bfa83fcccc46c738cfe58f05f488dbb221e64487dd4e",
+      "unchanged": false
+    },
+    {
+      "path": "docs/API.md",
+      "original_sha256": "be3717a0e988f69250d09395365f1ab02c7c1ca4ea4a232efbd9d0ee01f83000",
+      "github_sha256": "be3717a0e988f69250d09395365f1ab02c7c1ca4ea4a232efbd9d0ee01f83000",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "original_sha256": "acec706a6d516df43312cfe139e60d8f5a66d544209c92bc0beafdbe36934fb8",
+      "github_sha256": "acec706a6d516df43312cfe139e60d8f5a66d544209c92bc0beafdbe36934fb8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/DATABASE.md",
+      "original_sha256": "e0ce1d26ed415339052d34504ad10ef035ac798d4be52c8ecda0001e84f8eadd",
+      "github_sha256": "e0ce1d26ed415339052d34504ad10ef035ac798d4be52c8ecda0001e84f8eadd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/NLP.md",
+      "original_sha256": "fdf715a72c6f2f7ebb64fd1186db13209c2ee2f04f6a9969b7ad1784d0690a81",
+      "github_sha256": "fdf715a72c6f2f7ebb64fd1186db13209c2ee2f04f6a9969b7ad1784d0690a81",
+      "unchanged": true
+    },
+    {
+      "path": "docs/NLP_EVALUATION.json",
+      "original_sha256": "f9d69c20567ec36cdf80f9797cc05f73e739537507391019ea93647fcd840710",
+      "github_sha256": "f9d69c20567ec36cdf80f9797cc05f73e739537507391019ea93647fcd840710",
+      "unchanged": true
+    },
+    {
+      "path": "docs/NLP_EVALUATION.md",
+      "original_sha256": "c79710e24a24f8a2491ab037663ef1a4d07a73c0bae48bc9aba982d38d375fb2",
+      "github_sha256": "c79710e24a24f8a2491ab037663ef1a4d07a73c0bae48bc9aba982d38d375fb2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "original_sha256": "14dc5d22bea5b3fc068c3d57de418ac9caa331ee85f7a51ecffb118dc18974db",
+      "github_sha256": "14dc5d22bea5b3fc068c3d57de418ac9caa331ee85f7a51ecffb118dc18974db",
+      "unchanged": true
+    },
+    {
+      "path": "docs/TESTING.md",
+      "original_sha256": "5a543c3c4aa35b7d6ce4bfb22671ecc6ace334f9385ce743c42bd3484cc17de1",
+      "github_sha256": "5a543c3c4aa35b7d6ce4bfb22671ecc6ace334f9385ce743c42bd3484cc17de1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/USER_GUIDE.md",
+      "original_sha256": "908ff2d60649a6542b81ac73c800dcc994079953c6b566c2ce469ad42a09858c",
+      "github_sha256": "908ff2d60649a6542b81ac73c800dcc994079953c6b566c2ce469ad42a09858c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/manual/Інструкція користувача Освітній процес.docx",
+      "original_sha256": "75a9a1a0d0de6de69b0c210200e917c25ec665a35fcd715e2f6489bee26df5c6",
+      "github_sha256": "75a9a1a0d0de6de69b0c210200e917c25ec665a35fcd715e2f6489bee26df5c6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/presentation/Освітній процес — демонстрація.pptx",
+      "original_sha256": "7ab41ab48e971f4531378b7599da330d3420b7e28298ec1b3ed0fe5fc1d9bdf7",
+      "github_sha256": "7ab41ab48e971f4531378b7599da330d3420b7e28298ec1b3ed0fe5fc1d9bdf7",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/.dockerignore",
+      "original_sha256": "236c5a49e0b294291399deb704c61c144e75eb30cea725c5fd7f7f1e0d87e92b",
+      "github_sha256": "236c5a49e0b294291399deb704c61c144e75eb30cea725c5fd7f7f1e0d87e92b",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/Dockerfile",
+      "original_sha256": "147d4900ea8b23799981da29f7ebcaf34e593196e4f6a4c39993819790086830",
+      "github_sha256": "147d4900ea8b23799981da29f7ebcaf34e593196e4f6a4c39993819790086830",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/e2e/registration.spec.ts",
+      "original_sha256": "84dc2f66c879d488291f6373f44b42c7e63d4fdace236601fc5c368bc0212084",
+      "github_sha256": "84dc2f66c879d488291f6373f44b42c7e63d4fdace236601fc5c368bc0212084",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/e2e/workflow.spec.ts",
+      "original_sha256": "7b757619140ee65ef5cb79b13fa737d1f977fd53cf44bae96973e216d85fcd76",
+      "github_sha256": "7b757619140ee65ef5cb79b13fa737d1f977fd53cf44bae96973e216d85fcd76",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/index.html",
+      "original_sha256": "6f7f49be511af51ab45f4df6dfa53c7e3ae61973b4f658b7676abaf10573d692",
+      "github_sha256": "6f7f49be511af51ab45f4df6dfa53c7e3ae61973b4f658b7676abaf10573d692",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/nginx.conf",
+      "original_sha256": "d78d42040994a72b6d1df308ba0df25cb9e2e79b430641a9e7baa1eea219cc16",
+      "github_sha256": "d78d42040994a72b6d1df308ba0df25cb9e2e79b430641a9e7baa1eea219cc16",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "original_sha256": "a15b260e2acfed43996b178c1b42899ca6cc8e6f3b84d3ce2a4a057077946f03",
+      "github_sha256": "a15b260e2acfed43996b178c1b42899ca6cc8e6f3b84d3ce2a4a057077946f03",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/package.json",
+      "original_sha256": "0ad90ef8bd4c7d32417979aef65821ab83c4255a716fe7dd0421e0838548d471",
+      "github_sha256": "0ad90ef8bd4c7d32417979aef65821ab83c4255a716fe7dd0421e0838548d471",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/playwright.config.ts",
+      "original_sha256": "da455acc7ebf1ad6c5c6f9a3dde15bd4c368ea36201f7d4c2b22ae6954b7c486",
+      "github_sha256": "8216006db25bef45885c192121521e86c8629469d2687f561ce5543f12e1eed8",
+      "unchanged": false
+    },
+    {
+      "path": "frontend/public/mark.svg",
+      "original_sha256": "903601fdf304338efe06fa353c34c0124d8262f73d5ccaebc37b9826f6c8d498",
+      "github_sha256": "903601fdf304338efe06fa353c34c0124d8262f73d5ccaebc37b9826f6c8d498",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/components/layout.tsx",
+      "original_sha256": "5525ee185373cce672bdf4fffed904df86945d47c2d76c9569bd553b6fefab31",
+      "github_sha256": "5525ee185373cce672bdf4fffed904df86945d47c2d76c9569bd553b6fefab31",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/components/ui.tsx",
+      "original_sha256": "514541faf7e401fcccbbd31b78edf7f4003d9b3af2508b845fa826fc45c0ea1d",
+      "github_sha256": "514541faf7e401fcccbbd31b78edf7f4003d9b3af2508b845fa826fc45c0ea1d",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/features/admin.tsx",
+      "original_sha256": "6d524bc9db41866e43dbad63f45e6ed94b6f83171e4268952dd3dfa82fcd070f",
+      "github_sha256": "6d524bc9db41866e43dbad63f45e6ed94b6f83171e4268952dd3dfa82fcd070f",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/features/auth.tsx",
+      "original_sha256": "56b4c19719a8aa4461eb65cda850648096fb36f7db0e0942d0d6a567e9bb38c0",
+      "github_sha256": "56b4c19719a8aa4461eb65cda850648096fb36f7db0e0942d0d6a567e9bb38c0",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/features/courses.tsx",
+      "original_sha256": "7e43b833c94015e1c6627bb5cf7c63a46b73bc6f74962c7e5e38683e62190c88",
+      "github_sha256": "7e43b833c94015e1c6627bb5cf7c63a46b73bc6f74962c7e5e38683e62190c88",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/features/dashboard.tsx",
+      "original_sha256": "86b7f19338920c1bc5a4f9de90a76b9be0a755ab901175c26dbfc1e3adc15dbf",
+      "github_sha256": "86b7f19338920c1bc5a4f9de90a76b9be0a755ab901175c26dbfc1e3adc15dbf",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/features/questions.tsx",
+      "original_sha256": "9c0ec71c664e5245e132776a33eac39a3ec76e32b94a43767269a3bbb1ce5219",
+      "github_sha256": "9c0ec71c664e5245e132776a33eac39a3ec76e32b94a43767269a3bbb1ce5219",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/features/registration.tsx",
+      "original_sha256": "cc4af54519ed7e943c42b60df87788db6fb22c4d137a8c67ab67e83a48bef6f2",
+      "github_sha256": "cc4af54519ed7e943c42b60df87788db6fb22c4d137a8c67ab67e83a48bef6f2",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/features/submissions.tsx",
+      "original_sha256": "0cfd57c6e44af7fff8d367ced81f70f835603aeff4be71a8ca908b066cc8fa8f",
+      "github_sha256": "0cfd57c6e44af7fff8d367ced81f70f835603aeff4be71a8ca908b066cc8fa8f",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/features/variations.tsx",
+      "original_sha256": "52844228c5d3282632d432e1b7927f8b83a187fb12ba236f5a1653a4af83bcda",
+      "github_sha256": "52844228c5d3282632d432e1b7927f8b83a187fb12ba236f5a1653a4af83bcda",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/lib/api.test.ts",
+      "original_sha256": "4acce1ec153df8d307c0930d2594365fe85f96fabfbef638258976b4ce5f9f92",
+      "github_sha256": "4acce1ec153df8d307c0930d2594365fe85f96fabfbef638258976b4ce5f9f92",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "original_sha256": "e9934d8c749db3bd51bcae1864e8d6b19d2be1f917417579aea6f1d694ba4838",
+      "github_sha256": "e9934d8c749db3bd51bcae1864e8d6b19d2be1f917417579aea6f1d694ba4838",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/lib/format.ts",
+      "original_sha256": "415bc9343672e5729d9b0d065dd5c7f88e7703aea10c37569a61e848be4131ff",
+      "github_sha256": "415bc9343672e5729d9b0d065dd5c7f88e7703aea10c37569a61e848be4131ff",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/lib/registration.test.ts",
+      "original_sha256": "41500473950104ad41654913185d356f27c9942d7262990232ea7e34c1ef155f",
+      "github_sha256": "41500473950104ad41654913185d356f27c9942d7262990232ea7e34c1ef155f",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/lib/registration.ts",
+      "original_sha256": "53a832f0944579e614eaa0fea96ff7959ff64461244c29a23a16b6d6609cb4c5",
+      "github_sha256": "53a832f0944579e614eaa0fea96ff7959ff64461244c29a23a16b6d6609cb4c5",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/lib/types.ts",
+      "original_sha256": "3f968bd062a89c84f670f57539ff19d2d8a8476db7fecb06d8f231c65d6d79f1",
+      "github_sha256": "3f968bd062a89c84f670f57539ff19d2d8a8476db7fecb06d8f231c65d6d79f1",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "original_sha256": "b0219ff4e336df616af59bcb8efedf39a42d3f309bc2f1042397bb2b1d34b69d",
+      "github_sha256": "b0219ff4e336df616af59bcb8efedf39a42d3f309bc2f1042397bb2b1d34b69d",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/src/styles/main.css",
+      "original_sha256": "202cbfe27290919dda11f8d3f8ef21391b238e0bec847c330ca03b63b200e4f3",
+      "github_sha256": "202cbfe27290919dda11f8d3f8ef21391b238e0bec847c330ca03b63b200e4f3",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "original_sha256": "5bcfc83da1e1d536d31b7170d46fa308be35eb455c96a487d95495a69c28047d",
+      "github_sha256": "5bcfc83da1e1d536d31b7170d46fa308be35eb455c96a487d95495a69c28047d",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "original_sha256": "00f0af658484c0c611901b723f0b0e015d29aa87595032c83bab564466ead4aa",
+      "github_sha256": "00f0af658484c0c611901b723f0b0e015d29aa87595032c83bab564466ead4aa",
+      "unchanged": true
+    }
+  ]
+}

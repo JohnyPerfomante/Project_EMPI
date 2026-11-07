@@ -1,0 +1,1513 @@
+{
+  "created_at": "2026-11-06T17:47:37.238912+00:00",
+  "corpus": "DEMO, developer-labelled",
+  "cases": 150,
+  "questions": 50,
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "revision": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+  "morphology": "Stanza 1.10.1 · uk/tokenize,mwt,pos,lemma",
+  "algorithm": "1.0.0",
+  "config": {
+    "high_threshold": 0.79,
+    "low_threshold": 0.39,
+    "semantic_weight": 0.72,
+    "lexical_weight": 0.08,
+    "concept_weight": 0.2,
+    "min_answer_length": 5,
+    "max_answer_length": 1800,
+    "detect_negation": true
+  },
+  "labels": [
+    "HIGH_MATCH",
+    "NEEDS_REVIEW",
+    "LOW_MATCH"
+  ],
+  "metrics": {
+    "HIGH_MATCH": {
+      "precision": 0.9583333333333334,
+      "recall": 0.46,
+      "f1-score": 0.6216216216216216,
+      "support": 50.0
+    },
+    "NEEDS_REVIEW": {
+      "precision": 0.411214953271028,
+      "recall": 0.88,
+      "f1-score": 0.5605095541401274,
+      "support": 50.0
+    },
+    "LOW_MATCH": {
+      "precision": 0.6842105263157895,
+      "recall": 0.26,
+      "f1-score": 0.37681159420289856,
+      "support": 50.0
+    },
+    "accuracy": 0.5333333333333333,
+    "macro avg": {
+      "precision": 0.6845862709733836,
+      "recall": 0.5333333333333333,
+      "f1-score": 0.5196475899882159,
+      "support": 150.0
+    },
+    "weighted avg": {
+      "precision": 0.6845862709733836,
+      "recall": 0.5333333333333333,
+      "f1-score": 0.5196475899882159,
+      "support": 150.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      23,
+      27,
+      0
+    ],
+    [
+      0,
+      44,
+      6
+    ],
+    [
+      1,
+      36,
+      13
+    ]
+  ],
+  "latency_ms": {
+    "scope": "Warm model and reference vectors, no DB or HTTP",
+    "p50": 117.0,
+    "p95": 379.5,
+    "max": 419.0
+  },
+  "cases_by_question": [
+    {
+      "question_id": "1",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6829,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "1",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.424,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "1",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5631,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "2",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8525,
+      "warnings": []
+    },
+    {
+      "question_id": "2",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.3919,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "2",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5256,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "3",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7296,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "3",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4186,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "3",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5586,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "4",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6809,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "4",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "LOW_MATCH",
+      "score": 0.2562,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "4",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4884,
+      "warnings": [
+        "negation",
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "5",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6218,
+      "warnings": []
+    },
+    {
+      "question_id": "5",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4361,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "5",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.321,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "6",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7455,
+      "warnings": []
+    },
+    {
+      "question_id": "6",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.466,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "6",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5954,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "7",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.833,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "7",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5299,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "7",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7673,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "8",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8282,
+      "warnings": []
+    },
+    {
+      "question_id": "8",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "LOW_MATCH",
+      "score": 0.324,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "8",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4842,
+      "warnings": [
+        "negation",
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "9",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7105,
+      "warnings": []
+    },
+    {
+      "question_id": "9",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "LOW_MATCH",
+      "score": 0.3227,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "9",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.3294,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "10",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7654,
+      "warnings": []
+    },
+    {
+      "question_id": "10",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4719,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "10",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4104,
+      "warnings": [
+        "negation",
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "11",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6764,
+      "warnings": []
+    },
+    {
+      "question_id": "11",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5056,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "11",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4539,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "12",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8138,
+      "warnings": []
+    },
+    {
+      "question_id": "12",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5333,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "12",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4561,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "13",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6892,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "13",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.3903,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "13",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4127,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "14",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8175,
+      "warnings": []
+    },
+    {
+      "question_id": "14",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5184,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "14",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.3321,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "15",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8311,
+      "warnings": []
+    },
+    {
+      "question_id": "15",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6222,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "15",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.856,
+      "warnings": []
+    },
+    {
+      "question_id": "16",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8321,
+      "warnings": []
+    },
+    {
+      "question_id": "16",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4281,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "16",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.587,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "17",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8893,
+      "warnings": []
+    },
+    {
+      "question_id": "17",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5416,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "17",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5748,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "18",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6921,
+      "warnings": []
+    },
+    {
+      "question_id": "18",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4015,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "18",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.471,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "19",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6791,
+      "warnings": []
+    },
+    {
+      "question_id": "19",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4741,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "19",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.3814,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "20",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7651,
+      "warnings": []
+    },
+    {
+      "question_id": "20",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.529,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "20",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5254,
+      "warnings": [
+        "negation",
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "21",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6384,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "21",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4727,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "21",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4398,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "22",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8672,
+      "warnings": []
+    },
+    {
+      "question_id": "22",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5068,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "22",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.454,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "23",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.793,
+      "warnings": []
+    },
+    {
+      "question_id": "23",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4039,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "23",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5279,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "24",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7752,
+      "warnings": []
+    },
+    {
+      "question_id": "24",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4059,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "24",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.3558,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "25",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8582,
+      "warnings": []
+    },
+    {
+      "question_id": "25",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6273,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "25",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4022,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "26",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7795,
+      "warnings": [
+        "negation"
+      ]
+    },
+    {
+      "question_id": "26",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6493,
+      "warnings": []
+    },
+    {
+      "question_id": "26",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5014,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "27",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.7959,
+      "warnings": []
+    },
+    {
+      "question_id": "27",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "LOW_MATCH",
+      "score": 0.1926,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "27",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.3288,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "28",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8316,
+      "warnings": []
+    },
+    {
+      "question_id": "28",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5351,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "28",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4391,
+      "warnings": [
+        "negation",
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "29",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6982,
+      "warnings": []
+    },
+    {
+      "question_id": "29",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4337,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "29",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.3966,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "30",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.7912,
+      "warnings": []
+    },
+    {
+      "question_id": "30",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6082,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "30",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.367,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "31",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7918,
+      "warnings": [
+        "negation",
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "31",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5773,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "31",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5648,
+      "warnings": [
+        "negation",
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "32",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8907,
+      "warnings": []
+    },
+    {
+      "question_id": "32",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6393,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "32",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.3247,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "33",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8915,
+      "warnings": []
+    },
+    {
+      "question_id": "33",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7182,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "33",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5224,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "34",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.9192,
+      "warnings": []
+    },
+    {
+      "question_id": "34",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.526,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "34",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4031,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "35",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6416,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "35",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "LOW_MATCH",
+      "score": 0.2493,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "35",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5859,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "36",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7806,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "36",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5864,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "36",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5358,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "37",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8165,
+      "warnings": []
+    },
+    {
+      "question_id": "37",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.3901,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "37",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5189,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "38",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.745,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "38",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6226,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "38",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.553,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "39",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8407,
+      "warnings": []
+    },
+    {
+      "question_id": "39",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6974,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "39",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5272,
+      "warnings": [
+        "negation",
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "40",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8902,
+      "warnings": []
+    },
+    {
+      "question_id": "40",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5962,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "40",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.3738,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "41",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.9054,
+      "warnings": []
+    },
+    {
+      "question_id": "41",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5303,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "41",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7377,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "42",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8353,
+      "warnings": []
+    },
+    {
+      "question_id": "42",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5647,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "42",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.2246,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "43",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6357,
+      "warnings": []
+    },
+    {
+      "question_id": "43",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4114,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "43",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.1354,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "44",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8207,
+      "warnings": []
+    },
+    {
+      "question_id": "44",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4917,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "44",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4449,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "45",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7572,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "45",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.552,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "45",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.278,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "46",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6642,
+      "warnings": []
+    },
+    {
+      "question_id": "46",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "LOW_MATCH",
+      "score": 0.1885,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "46",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "LOW_MATCH",
+      "score": 0.3122,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "47",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7561,
+      "warnings": []
+    },
+    {
+      "question_id": "47",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5105,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "47",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5758,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "48",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "HIGH_MATCH",
+      "score": 0.8553,
+      "warnings": []
+    },
+    {
+      "question_id": "48",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5885,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "48",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5588,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "49",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7672,
+      "warnings": []
+    },
+    {
+      "question_id": "49",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5576,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "49",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.5625,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "50",
+      "case": 1,
+      "expected": "HIGH_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.7645,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "50",
+      "case": 2,
+      "expected": "NEEDS_REVIEW",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.4027,
+      "warnings": [
+        "required_concepts"
+      ]
+    },
+    {
+      "question_id": "50",
+      "case": 3,
+      "expected": "LOW_MATCH",
+      "predicted": "NEEDS_REVIEW",
+      "score": 0.6753,
+      "warnings": [
+        "required_concepts"
+      ]
+    }
+  ]
+}
